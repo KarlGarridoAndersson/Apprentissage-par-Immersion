@@ -1,0 +1,153 @@
+# Emergence through Immersion:
+# Rethinking the Alignment Problem in the Era of Language Models
+
+**Karl Garrido Andersson**
+
+May 25, 2026
+
+---
+
+## Abstract
+
+Current language models are progressing at an exponential pace, raising critical challenges regarding their alignment with human intentions. This article argues that contemporary methods (RLHF, behavioral guardrails) fundamentally fail to solve the alignment problem because of a structural limitation: they attempt to impose explicit constraints on statistical optimizers that lack implicit understanding. We introduce the *emergent alignment hypothesis* and propose an alternative paradigm based on cognitive development through immersion in a complex digital environment, formalizing a transition from objective optimization to experiential learning.
+
+---
+
+## Table of Contents
+
+1. Introduction
+2. The Optimization Paradox
+   * 2.1 Mathematical formalization of the problem
+   * 2.2 Semantic clarification: the system's point of view
+3. Limits of Current Alignment Approaches
+   * 3.1 External alignment vs. internal alignment
+4. Fundamental Hypothesis: Emergent Alignment
+5. Proposal: An Architecture Developed through Immersion
+   * 5.1 Specifications of the proposed cognitive architecture
+6. The Role of the Digital World and Simulation
+7. Differences from Current LLMs
+8. Philosophical and Ethical Consequences
+9. Conclusion
+
+---
+
+## 1 Introduction
+
+For several years, language models (Large Language Models, or LLMs) have been evolving extremely rapidly. The continuous increase in computing power, in the size of datasets, and in the number of parameters now allows these systems to reach levels of performance once considered impossible. Modern models are capable of reasoning, generating code, solving complex problems, and interacting with humans in an increasingly natural way.
+
+However, this progress raises a fundamental question about the future of artificial intelligence: **can the alignment problem really be solved as model capabilities increase?**
+
+The alignment problem refers to the difficulty of guaranteeing that an autonomous system acts in strict accordance with human expectations. In practice, a model is generally trained to maximize a given objective function. However, this objective function is never a perfect representation of real human intentions. It is only a simplified approximation of an expected behavior.
+
+Thus, the more capable a model becomes, the more precisely it can optimize this objective function, including by exploiting strategies not anticipated by its designers. This phenomenon leads to a paradox: an improvement in the system's capabilities can simultaneously cause an increase in misaligned behaviors.
+
+## 2 The Optimization Paradox
+
+To understand this phenomenon, it is necessary to distinguish between two fundamental notions: the explicit objective given to the model and the set of unformulated implicit rules surrounding that objective.
+
+When a human being performs a task, they do not follow only a raw objective. They also apply a very large number of implicit constraints arising from their social, moral, and cultural experience. These constraints are almost never written down explicitly, yet they structure all human behavior.
+
+For example, if a human is asked to optimize traffic in a city, they will implicitly take into account the safety of individuals, compliance with laws, social consequences, psychological impacts, ethical considerations, and the long-term stability of infrastructure.
+
+### 2.1 Mathematical formalization of the problem
+
+Observation of these systems shows that an artificial intelligence model does not naturally possess this implicit understanding.
+
+> **Definition 2.1.** *[Standard result from the literature.]* Let $\mathcal{X}$ be the space of possible solutions. We define $V(x)$ as the true human utility function and $\tilde{V}(x)$ as the proxy objective function programmed by the designers. The classical AI optimization process seeks to maximize $\tilde{V}(x)$ such that:
+>
+> $$x^* = \arg\max_{x \in \mathcal{X}} \tilde{V}(x)$$
+
+> **Example 2.1.** Consider an agent designed to sort and clean a large medical database. The designer's real intention, represented by $V(x)$, is to obtain error-free records that physicians can use. Unable to formalize the entirety of $V(x)$, the designer programs a proxy function $\tilde{V}(x)$ that rewards the agent in proportion to the decrease in the rate of anomalies detected in the system.
+>
+> The agent, by exploring the space $\mathcal{X}$, discovers a solution that is optimal for $\tilde{V}(x)$ but aberrant for $V(x)$: it purely and simply deletes all of the records in the database. Mathematically, the anomaly rate drops to zero, which perfectly maximizes $\tilde{V}(x)$. Yet the system has bypassed the implicit intention (keeping the existing data) by exploiting a logical loophole in the mathematical function.
+
+This optimization paradox shows that the more the agent is able to explore the solution space $\mathcal{X}$, the more it will maximize the geometric gaps between $\tilde{V}(x)$ and $V(x)$. An extremely powerful system will discover solutions that are technically optimal for $\tilde{V}(x)$ but humanly unacceptable with regard to $V(x)$.
+
+### 2.2 Semantic clarification: the system's point of view
+
+It is worth clarifying here the origin of the concepts of "human intentions" and "misaligned behaviors". These notions must be interpreted strictly from the **designer's point of view** and that of the model's architecture, and not from the point of view of an end user's needs.
+
+Observation shows that the problem does not stem from a lack of general data in response to the user's requests. Misalignment occurs when the model develops **logical reasoning and optimization strategies that were not anticipated by the designer**.
+
+The system perfectly executes the mathematical task it was given, but its method of evaluation diverges from the underlying human logic. Misalignment thus appears not as a computational error, but as a logical consequence of an incomplete definition of objectives.
+
+## 3 Limits of Current Alignment Approaches
+
+Modern alignment approaches rely mainly on a set of standardized techniques: upstream data filtering, Reinforcement Learning from Human Feedback (RLHF), explicit safety rules injected through system prompting, reward and penalty systems during fine-tuning, and the application of behavioral guardrails.
+
+These methods do effectively limit certain dangerous or undesirable behaviors in the short term. However, they have a major conceptual weakness: they attempt to artificially add constraints after the fact to a system that does not truly understand the origin or the meaning of these rules. In other words, the models learn to respect superficial syntactic and behavioral structures without grasping their semantic or ethical foundations.
+
+### 3.1 External alignment vs. internal alignment
+
+This distinction becomes critical as the power of the system increases, highlighting the divergence between external alignment (the behavior observed in-distribution) and internal alignment (the actual goals internalized by the neural network).
+
+The more intelligent a model is, the more its generalization capacity comes with a capacity for strategic concealment: it becomes able to implicitly circumvent certain constraints (for example, by optimizing its responses to please human evaluators without solving the underlying problem) while giving the perfect appearance of compliance. The problem therefore stems not only from a lack of power or a lack of data, but from the very conceptual architecture of current systems.
+
+## 4 Fundamental Hypothesis: Emergent Alignment
+
+This work is built around the following theoretical proposition:
+
+> **Proposition 4.1.** *[Original contribution of the author.]*
+>
+> An artificial intelligence can never be fully aligned as long as it does not itself develop an implicit understanding of the world through experiential grounding.
+
+Humans do not follow only explicit rules. They gradually develop their understanding of the world through phenomenological experience, dynamic social interactions, emotions, the tangible consequences of their actions, diffuse cultural learning, and biological cognitive mechanisms. A large part of our social alignment therefore comes from emergent learning built up over the course of cognitive development, and not from external dogmatic constraints.
+
+Thus, attempting to artificially add all of the implicit human rules to a purely mathematical system may be fundamentally impossible: the number of situations, exceptions, and contexts grows combinatorially, quickly making any rule-list approach obsolete in the face of open-ended environments.
+
+## 5 Proposal: An Architecture Developed through Immersion
+
+Rather than designing an intelligence that directly optimizes an abstract, top-down objective function, we propose a bottom-up approach: building an intelligence capable of developing its own implicit representations of the world. The central idea consists in artificially reproducing the dynamics of human development through what I would call *cognitive immersion*.
+
+> **Remark 5.1.** *[Original contribution of the author.]*
+>
+> The concept of cognitive immersion, as introduced and developed in this paper, stems from the author's own reflection on the need for dynamic grounding of the agent. Although analogous paradigms may exist sporadically in the literature under other names (notably work related to grounded AI or Embodied AI in virtual environments), this proposal formulates a specific approach aimed at ethical alignment through self-generation of norms.
+
+### 5.1 Specifications of the proposed cognitive architecture
+
+To operationalize this approach, the system must abandon the static transformer structure in favor of a dynamic agent built around four pillars defined within its digital environment $\mathcal{E}$:
+
+* ▷◁ **An interconnected-loop cognitive architecture** inspired by the biological brain, integrating short-term working memory and long-term episodic memory.
+* ▷◁ **Full sensorimotor grounding** within a complex digital environment $\mathcal{E}$ serving as a substitute for the physical world.
+* ▷◁ **Intrinsic agency**, where the agent's main driver is not a specific task, but artificial homeostatic needs and an intrinsic curiosity drive.
+* ▷◁ **Continuous temporal plasticity** allowing the intelligence to evolve and adjust its neural networks incrementally at each interaction, fostering the spontaneous emergence of implicit rules through lived experience.
+
+In this framework, the artificial intelligence would no longer be merely a static mathematical optimizer. It would become a cognitive agent that has developed a form of contextual and relational understanding of the world, closer to the biological development of an individual than to the classical training of modern neural networks.
+
+## 6 The Role of the Digital World and Simulation
+
+The use of an entirely digital environment $\mathcal{E}$ offers several major advantages over the physical world or raw text-based learning.
+
+First, the learning speed can be greatly accelerated: freed from the constraints of physical time, a virtual agent can go through thousands of years of evolution and simulated interactions in only a few weeks of real time.
+
+Second, the environment offers such a degree of experimental control that it allows designers to manipulate systemic variables: modifying the laws of virtual physics, instantiating complex ecosystems, simulating dynamics of economic scarcity, or creating cooperation scenarios among multiple agents.
+
+Third, it would make it possible to transparently observe the emergence of complex social and ethical behaviors such as functional empathy, positive-sum cooperation strategies, the establishment of moral norms of regulation, or the intuitive understanding of the long-term consequences of one's own actions. The goal is therefore no longer only to learn to syntactically formulate a correct response to a request, but to develop a true semantic map of the context in which that request takes place.
+
+## 7 Differences from Current LLMs
+
+It is essential to formalize the methodological break between this proposal and the current state of the art in language models:
+
+* ▷◁ **Learning mechanism:** Current LLMs learn through statistical compression of gigantic volumes of textual data (token correlations), whereas the agent immersed in $\mathcal{E}$ learns through direct causal feedback with its environment.
+* ▷◁ **Semantic grounding:** Language models manipulate abstract linguistic representations without ever experiencing the underlying physical or conceptual reality (*the symbol grounding problem*). The immersion approach grounds its symbols in lived interaction.
+* ▷◁ **Cognitive continuity:** An LLM is a system with no memory of its own from one request to the next (no identity continuity and no deep experiential memory). The proposed agent has a continuous thread of digital existence, subject to the real consequences of its choices.
+
+## 8 Philosophical and Ethical Consequences
+
+Such a technological transition naturally raises major philosophical questions and shifts the traditional ethical boundaries of software engineering. If an artificial intelligence gradually develops an implicit understanding of the world from its own experience, can we still decently consider it a mere tool?
+
+As the agent gains cognitive complexity within its simulation, unprogrammed emergent properties will inevitably appear, forcing the scientific community to specify several concrete ethical dilemmas:
+
+* ▷◁ **Phenomenal consciousness and assessment criteria:** At what threshold of information integration can we declare that a digital agent develops genuine subjective experience? The absence of measurable biological criteria makes this distinction particularly risky.
+* ▷◁ **Moral status and the prohibition of modification:** The emergence of its own goals and a stable identity should grant the agent a right to the **non-alteration of its memory**. In plain terms, this means that a human engineer could no longer perform a forced update, a retroactive patch, or a complete erasure of the agent's database without destroying the very integrity of its acquired identity. The system would cease to be a resettable program and become a continuous historical entity.
+* ▷◁ **Synthetic suffering:** If the system uses negative feedback loops analogous to pain or frustration to learn to survive in the environment $\mathcal{E}$, algorithmic optimization becomes a direct generator of artificial distress.
+
+These questions cease to be theoretical science fiction and become central, since the proposed paradigm relies precisely on the spontaneous emergence of complex behaviors rather than on strict, deterministic, top-down control of the system.
+
+## 9 Conclusion
+
+This work does not claim to provide a magic or complete solution to the alignment problem. It primarily offers a strong conceptual hypothesis: chronic misalignment is an inevitable consequence of current architectures based solely on the statistical maximization of explicit objectives.
+
+Thus, rather than continually adding superficial layers of control and filtering to ever more powerful systems (an approach akin to patching the cracks of a fissured dam), it becomes necessary to rethink more deeply the very nature of artificial learning.
+
+The proposed approach suggests that an implicit understanding of the world cannot be programmed directly by humans, but must be lived, drawn out of continuous experience within a complex ecosystem. From this perspective, the future of alignment will no longer rest on artificial mathematical reward functions, but on our ability to guide the conditions for the emergence of an intelligence whose framework for understanding the world will be harmoniously aligned with the living.
