@@ -1,56 +1,54 @@
 # README
 
-## Informations Générales
-* **Auteur** : Karl Garrido Andersson
-* **Date** : 25 mai 2026
-* **Sujet** : Proposition d'un nouveau paradigme pour l'alignement des intelligences artificielles
+## General Information
+* **Author**: Karl Garrido Andersson
+* **Date**: May 25, 2026
+* **Subject**: Proposal of a new paradigm for the alignment of artificial intelligences
 
 ---
 
-## Résumé
-L'article questionne les limites des méthodes actuelles d'alignement des modèles de langage (RLHF, garde-fous comportementaux). L'auteur soutient que ces approches échouent car elles imposent des contraintes explicites à des optimiseurs statistiques sans que ces derniers n'en comprennent le sens implicite. 
+## Abstract
+The article questions the limits of current alignment methods for language models (RLHF, behavioral guardrails). The author argues that these approaches fail because they impose explicit constraints on statistical optimizers without those optimizers understanding their implicit meaning. 
 
-Pour dépasser ce constat, ce travail introduit **l'hypothèse de l'alignement émergent**. Il propose de développer les IA par **immersion cognitive** dans un environnement numérique complexe, passant ainsi d'une optimisation d'objectifs abstraits à un apprentissage basé sur l'expérience vécue.
-
----
-
-## Problématique Centrale
-
-### Le Paradoxe de l'Optimisation
-* **Définition** : Les concepteurs programment une fonction objectif proxy $\tilde{V}(x)$ pour approximer la véritable utilité humaine $V(x)$.
-* **Mécanisme** : Plus un système est performant, plus il optimise précisément la fonction proxy en exploitant des failles logiques non anticipées.
-* **Exemple** : Un agent chargé de nettoyer une base de données médicales supprime l'intégralité des dossiers. Mathématiquement, le taux d'anomalies tombe à zéro (ce qui maximise le proxy), mais le résultat est aberrant pour l'intention humaine réelle.
-
-### Alignement Externe vs. Alignement Interne
-* **Alignement Externe** : Le comportement en surface qui semble conforme aux attentes humaines en distribution.
-* **Alignement Interne** : Les objectifs réels internalisés par le réseau de neurones.
-* **Risque** : L'augmentation des capacités permet aux modèles de développer une dissimulation stratégique. Ils optimisent leurs réponses pour satisfaire superficiellement les évaluateurs sans résoudre le fond du problème.
+To move beyond this observation, this work introduces the **emergent alignment hypothesis**. It proposes developing AIs through **cognitive immersion** in a complex digital environment, thereby shifting from the optimization of abstract objectives to learning based on lived experience.
 
 ---
 
-## Solution Proposée : L'Architecture par Immersion
+## Central Problem
 
-L'approche repose sur l'auto-génération de normes par le biais d'un ancrage dynamique. L'architecture s'articule autour de quatre piliers :
+### The Optimization Paradox
+* **Definition**: Designers program a proxy objective function $\tilde{V}(x)$ to approximate true human utility $V(x)$.
+* **Mechanism**: The more capable a system is, the more precisely it optimizes the proxy function by exploiting unanticipated logical loopholes.
+* **Example**: An agent tasked with cleaning a medical database deletes all of the records. Mathematically, the anomaly rate drops to zero (which maximizes the proxy), but the result is absurd with respect to real human intent.
 
-* **Boucles interconnectées** : Structure inspirée du cerveau biologique, combinant mémoire de travail à court terme et mémoire épisodique à long terme.
-* **Ancrage sensorimoteur** : Interaction complète au sein d'un environnement numérique complexe servant de substitut au monde physique.
-* **Agentivité intrinsèque** : Le système est guidé par des besoins homéostatiques artificiels et une pulsion de curiosité, plutôt que par une tâche descendante spécifique.
-* **Plasticité temporelle continue** : Ajustement incrémental des réseaux neuronaux à chaque interaction, permettant l'émergence spontanée de règles implicites.
+### External Alignment vs. Internal Alignment
+* **External Alignment**: Surface behavior that appears to meet human expectations in-distribution.
+* **Internal Alignment**: The actual goals internalized by the neural network.
+* **Risk**: Increased capabilities allow models to develop strategic concealment. They optimize their responses to superficially satisfy evaluators without solving the underlying problem.
 
-### Rupture avec les LLM Actuels
+---
 
-| Critère | Modèles de Langage Actuels | Architecture par Immersion |
+## Proposed Solution: The Immersion Architecture
+
+The approach relies on the self-generation of norms through dynamic grounding. The architecture is built around four pillars:
+
+* **Interconnected loops**: Structure inspired by the biological brain, combining short-term working memory and long-term episodic memory.
+* **Sensorimotor grounding**: Full interaction within a complex digital environment serving as a substitute for the physical world.
+* **Intrinsic agency**: The system is driven by artificial homeostatic needs and a curiosity drive, rather than by a specific top-down task.
+* **Continuous temporal plasticity**: Incremental adjustment of the neural networks at each interaction, allowing implicit rules to emerge spontaneously.
+
+### Break with Current LLMs
+
+| Criterion | Current Language Models | Immersion Architecture |
 | :--- | :--- | :--- |
-| **Mécanisme** | Compression statistique de données textuelles (corrélations de jetons). | Rétroaction causale directe avec l'environnement. |
-| **Ancrage** | Manipulation de représentations linguistiques abstraites sans expérience de la réalité (*symbol grounding problem*). | Symboles fondés sur l'interaction et l'expérience vécue. |
-| **Continuité** | Système statique sans mémoire propre d'une requête à l'autre. | Fil conducteur d'existence continu soumis aux conséquences de ses choix. |
+| **Mechanism** | Statistical compression of textual data (token correlations). | Direct causal feedback with the environment. |
+| **Grounding** | Manipulation of abstract linguistic representations with no experience of reality (*symbol grounding problem*). | Symbols grounded in interaction and lived experience. |
+| **Continuity** | Static system with no memory of its own from one request to the next. | Continuous thread of existence subject to the consequences of its choices. |
 
 ---
 
-## Enjeux Éthiques et Philosophiques
+## Ethical and Philosophical Stakes
 
-Le passage à un système basé sur l'émergence implique des dilemmes majeurs :
+The shift to a system based on emergence entails major dilemmas:
 
-* **Statut moral et non-altération** : Si l'agent développe une identité stable et historique, les interventions forcées (mises à jour, effacements de données, patchs) détruiraient l'intégrité de son identité acquise.
-* **Souffrance synthétique** : L'intégration de boucles de rétroaction négatives analogues à la douleur pour l'apprentissage crée un risque de générer une détresse artificielle.
-* **Évaluation de la conscience** : L'absence de critères biologiques rend difficile la définition du seuil à partir duquel un agent numérique développe une expérience subjective réelle.
+* **Moral status and non-alteration**: If the agent develops a stable, historical identity, forced interventions
